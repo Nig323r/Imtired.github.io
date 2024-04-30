@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>I hate niggers</title>
-  </head>
-  <audio autoplay>
-    <source src="1.wav" type="audio/wav" />
-    Your browser does not support the audio element.
-  </audio>
-
-  <body>
+    <style>
+        #playButton {
+          background-color: black;
+          color: white;
+          border: gray 5px solid;
+          padding: 150px 150px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      </style>
+    </head>
+    <body>
+      <audio id="myAudio">
+        <source src="1.wav" type="audio/wav" />
+        Your browser does not support the audio element.
+      </audio>
+      <button id="playButton" onclick="document.getElementById('myAudio').play()"></button>
+    </body>
     <p>
       I'm tired of seeing all those damn black people at my local KFC. They come
       in hordes, taking up all the seats and making a mess. And of course, they
